@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      // დავალება 2.1
+
+      var str1 = "Java";
+      var str2 = "Script";
+
+      document.writeln(str1 + str2 + "<br>");
+
+      // დავალება 2.2
+
+      var str1 = "და";
+      var str2 = "იყო";
+
+      document.writeln(`იყო ${str1} არა ${str2} რა` + "<br>");
+
+      //დავალება 2.3
+
+      var word = "გიორგი";
+
+      document.writeln(word[0] + "<br>");
+
+      //დავალება 2.4
+
+      var text = "პარიზი საფრანგეთის დედაქალაქია";
+
+      document.writeln(text[29] + "<br>");
+
+      // დავალება 2.5
+
+      var capital = "ხპარიზი";
+
+      document.writeln(capital.slice(1) + "<br>");
+
+      // დავალება 2.6
+
+      var name = "ნიკოლოზ";
+      document.writeln(`გამარჯობა ${name} როგორ ბრძანდებით?` + "<br>");
+
+      // დავალება 2.7
+
+      let person = prompt("გთხოვთ შეიყვანოთ თქვენი სხელი:");
+
+      if (person == null) {
+        window.alert("თქვენ არ შეგიყვანიათ თქვენი სახელი");
+      } else if (person.trim() == "") {
+        window.alert("თქვენ არ შეგიყვანიათ თქვენი სახელი");
+      } else window.alert(`გამარჯობა ${person.trim()}`);
+
+
+      //დავალება 2.8
+
+      var firstname = "ნიკოლოზ";
+
+      var lastname = "ლოლაძე";
+
+      document.writeln(
+        `დღევანდელი კონკურსის გამარჯვებულია ${firstname} ${lastname} ` + "<br>"
+      );
+
+      //დავალება 2.9
+
+      var str = "თბილისი საქართველოს დედაქალაქია";
+
+      console.log(str.includes("ამსტერდამი"));
+      console.log(str.includes("თბილისი"));
+
+      //დავალება 2.10
+
+      var year = Number(1);
+      var month = Number(6);
+
+      var mystudyperiod =
+        "მე it step აკადემიაში პროგრამირება უნდა ვისწავლო " +
+        (month + year * 12) +
+        " თვის განმავლობაში" +
+        "<br>";
+
+      document.writeln(mystudyperiod);
+
+      //დავალება 2.11
+
+      var str = "პარიზი საქართველოს დედაქალაქია";
+
+      document.writeln(str.replace("პარიზი", "თბილისი"));
+
+      //დავალება 2.12
+
+      var str = "Hello world , this is string";
+
+      console.log(str.substring(0, 5));
+      console.log(str.length);
+      console.log(str.slice(22, 28));
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // დავალება 1.1
+
+      var numbers = [3, 8, 15, 22, 7, 10];
+
+      var x = numbers.filter(function (item) {
+        return item > 10;
+      });
+      console.log(x);
+
+      //დავალება 1.2
+
+      var words = ["apple", "banana", "avocado", "cherry"];
+
+      var y = words.filter(function (item) {
+        return item[0] == "a";
+      });
+      console.log(y);
+
+      //დავალება 2.1
+      var nums = [12, 24, 36, 48];
+
+      var x = nums.every(function (item) {
+        return item % 2 == 0;
+      });
+      console.log(x);
+
+      //დავალება 2.2
+      var names = ["Anna", "Anano", "Ani"];
+
+      var x = names.every(function (item) {
+        return item[0] == "A";
+      });
+      console.log(x);
+
+      //დავალება 3.1
+      var grades = [40, 50, 90, 100];
+
+      var x = grades.some(function (item) {
+        return item > 90;
+      });
+
+      console.log(x);
+
+      //დაავალება 3.2
+
+      var fruits = ["apple", "banana", "cherry"];
+
+      var x = fruits.some(function (item) {
+        return item.length > 5;
+      });
+      console.log(x);
+
+      //დავალება 4.1
+
+      var names = ["nino", "dato", "maka"];
+
+      var x = names.forEach(function (item) {
+        console.log(item.toUpperCase());
+      });
+
+      //დავალება 4.2
+      var nums = [2, 4, 6];
+      var x = nums.forEach(function (item) {
+        console.log(item ** 2);
+      });
+
+      //დავალება 5.1
+      var celsius = [0, 10, 20];
+      var x = celsius.map(function (item) {
+        return item * 1.8 + 32;
+      });
+      console.log(x);
+
+      //დავალება 5.2
+
+      var words = ["hello", "world", "javascript"];
+
+      var x = words.map(function (item) {
+        return item.toUpperCase();
+      });
+      console.log(x);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      //დავალება 1
+      var x = 0;
+
+      do {
+        x++;
+        if (x % 5 == 0 || x % 7 == 0) {
+          document.write(x + "<br>");
+        }
+      } while (x < 100);
+
+      document.writeln("<br>");
+
+      //დავალება 2
+
+      var number = Number(window.prompt("შეიყვანეთ რიცხვი 1-დან 1000-მდე"));
+
+      if (number == "") {
+        window.alert("შეიყვანეთ რიცხვი");
+      } else if (number <= 0) {
+        window.alert("შეიყვანეთ რიცხვი");
+      }
+      if (number > 1000) {
+        window.alert("შეყვანილი რიცხვი მეტია 1000-ზე");
+      } else {
+        for (var z = 0; z < number; z++) {
+          document.writeln("ნიკოლოზ ლოლაძე <br>");
+        }
+      }
+
+      document.writeln("<br>");
+
+      //დავალება 3
+
+      var count = 0;
+
+      while (count < 10) {
+        count++;
+
+        var y = Math.round(Math.random() * 100);
+
+        document.writeln(y);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

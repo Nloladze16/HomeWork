@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //დავალება 7.1
+
+      var months = {
+        1: "იანვარი",
+        2: "თებერვალი",
+        3: "მარტი",
+        4: "აპრილი",
+        5: "მაისი",
+        6: "ივნისი",
+        7: "ივლისი",
+        8: "აგვისტო",
+        9: "სექტემბერი",
+        10: "ოქტომბერი",
+        11: "ნოემბერი",
+        12: "დეკემბერი",
+      };
+
+      console.log(months);
+
+      //დავალება 7.2
+
+      var person = {
+        სახელი: "ნიკოლოზ",
+        გვარი: "ლოლაძე",
+        გენდერი: "მამრობითი",
+      };
+
+      console.log(
+        person.სახელი + " " + person.გვარი + " (" + person.გენდერი + ")"
+      );
+
+      ///დავალება 7.3
+
+      var x = new Date();
+
+      var date = {
+        day: x.getFullYear(),
+        month: x.getMonth(),
+        year: x.getFullYear(),
+      };
+      console.log(date);
+
+      //დავალება 7.4
+
+      var obj = {
+        key11: "მნიშვნელობა1",
+        key8: "მნიშვნელობა2",
+        key4: "მნიშვნელობა3",
+      };
+
+      //დავალება 7.5
+      var obj = {
+        "9name": 10,
+        key7: 20,
+        "a-b": 30,
+        "city 10": 40,
+        city10: 50,
+      };
+
+      //დავალება 7.6
+
+      let products = {
+        pr1: "ბანანი",
+        pr2: "მარწყვი",
+        pr3: "მსხალი",
+        pr4: "მარწყვი",
+        pr5: "ატამი",
+        pr6: "საზამთრო",
+        pr7: "მარწყვი",
+      };
+      for (var x in products) {
+        if (products[x] == "მარწყვი") {
+          products[x] = "ალუბალი";
+        }
+      }
+
+      console.log(products);
+
+      //დავალება 7.7
+
+      var car = {
+        model: {
+          manufacturer: "BMW",
+          mark: "X6",
+        },
+        color: "black",
+        is_left_hand_drive: false,
+        number_of_doors: 5,
+      };
+      console.log(car.model.manufacturer, car.color);
+      //დავალება 7.8
+
+      car.color = "white";
+      car.is_left_hand_drive = true;
+
+      console.log(car.color);
+      console.log(car.is_left_hand_drive);
+
+      //დავალება 7.9
+
+      var obj = { a: 7, b: 8, c: 9 };
+
+      for (var x in obj) {
+        obj[x] = obj[x] ** 2;
+      }
+      console.log(obj);
+      //დავალება 7.10
+
+      var book = {
+        title: "JavaScript: The Definitive Guide",
+        author: "David Flanagan",
+        publisher: "O'Reilly Media",
+        year_of_publication: 2011,
+      };
+
+      var masiviKeys = [];
+
+      for (var x in book) {
+        masiviKeys.push(x);
+      }
+
+      console.log(masiviKeys);
+
+      var masiviValues = [];
+
+      for (var y in book) {
+        masiviValues.push(book[y]);
+      }
+
+      console.log(masiviValues);
+
+      //დავალება 7.11
+
+      var book = {
+        title: "JavaScript: The Definitive Guide",
+        author: "David Flanagan",
+      };
+
+      var year = {
+        year_of_publication: 2011,
+      };
+
+      var mergebooks = {
+        ...book,
+        ...year,
+      };
+      console.log(mergebooks);
+
+      //დავალება 7.12
+      var user = {
+        userName: "superadmin",
+        password: "Godzilla",
+      };
+
+      var { userName } = user;
+      var { password } = user;
+      console.log(userName, password);
+
+      //დავალება 7.13
+
+      var student = {
+        studentName: "პეტრე მგელაძე",
+        paydVolum: 700,
+      };
+
+      var x = (student) => student.paydVolum >= 1125;
+
+      console.log(x(student));
+
+      //დავალება 7.14
+
+      var purchases = {
+        foods: ["Apples", "Bananas", "Eggs", "Cucumber", "Cheese"],
+        amountPaid: [4, 6, 4, 12, 15],
+        date: "27/11/2021",
+      };
+
+      var x = purchases.amountPaid.reduce((left, right) => left + right);
+
+      console.log(x);
+
+      //დავალება 7.15
+
+      var car = {
+        manufacturer: {
+          name: "BMW",
+          location: "Munich, Germany",
+          year_of_establish: 1916,
+        },
+        model: "X6",
+        color: "black",
+        is_left_hand_drive: false,
+        number_of_doors: 5,
+      };
+
+      var x = function () {
+        console.log(car.manufacturer["name"] + " " + car["model"]);
+      };
+      x();
+
+      //დავალება 7.16
+
+      var purchases = [
+        {
+          item: "hammer",
+          price: 22,
+        },
+        {
+          item: "screwdriver",
+          price: 17,
+        },
+        {
+          item: "nails",
+          price: 8,
+        },
+      ];
+
+      var x = function () {
+        var total = 0;
+
+        for (i = 0; i < purchases.length; i++) {
+          total += purchases[i].price;
+        }
+
+        return total;
+      };
+      console.log(x());
+
+      //დავალება 7.17
+
+      var purchases = [
+        {
+          item: "hammer",
+          price: 22,
+        },
+        {
+          item: "screwdriver",
+          price: 17,
+        },
+        {
+          item: "nails",
+          price: 8,
+        },
+      ];
+
+      var x = function () {
+        var total = 0;
+
+        for (i = 0; i < purchases.length; i++) {
+          total += purchases[i].price;
+        }
+
+        return total / purchases.length;
+      };
+      console.log(x());
+
+      //დავალება 7.18
+
+      var product = {
+        weight: 10,
+        quantity: 6,
+        price: 60,
+        photo: true,
+      };
+
+      for (x in product) {
+        document.writeln(x + "<br>");
+      }
+
+      ("<br>");
+
+      for (x in product) {
+        document.writeln(product[x] + "<br>");
+      }
+
+      for (x in product) {
+        document.writeln(x + " : " + product[x] + "<br>");
+      }
+
+      //დავალება 7.19
+
+      var person = {
+        firstName: "ნათია",
+        age: 30,
+
+        sayhello: function () {
+          console.log("გამარჯობა " + person.firstName);
+        },
+      };
+      person.sayhello();
+
+      //დავალება 7.20'
+
+      var product = {
+        weight: 10,
+        quantity: 6,
+        price: 60,
+        photo: true,
+
+        onstock: function () {
+          if (product.quantity == 0) {
+            document.writeln("მარაგი ამოიწურა");
+          } else if (product.quantity > 0) {
+            document.writeln("მარაგში არის " + product.quantity + " პროდუქტი");
+          }
+        },
+      };
+      product.onstock();
+
+      //დავალება 7.21
+
+      var student = {
+        studentName: "პეტრე მგელაძე",
+        paydVolum: 700,
+      };
+
+      function changeProperty(key, value, obj) {
+        obj[key] = value;
+      }
+
+      changeProperty("studentName", "როინი ვეკუა", student);
+      changeProperty("paydVolum", 900, student);
+
+      console.log(student);
+    </script>
+  </body>
+</html>

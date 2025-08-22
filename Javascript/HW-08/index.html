@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var x = new Date();
+      console.log(x.toLocaleString());
+
+      ///////////////////////////////////////////////////////////////////
+
+      var y = new Date("2024-01-01"); 
+      console.log(y.toLocaleDateString());
+
+      /////////////////////////////////////////////////////////////////////////
+
+      console.log("წელი : " + x.getFullYear());
+      console.log("თვე : " + x.getMonth());
+      console.log("რიცხვი : " + x.getDate());
+
+      ///////////////////////////////////////////////////////////////////////
+
+      console.log("საათი : " + x.getHours());
+      console.log("წუთი : " + x.getMinutes());
+      console.log("წამი : " + x.getSeconds());
+      console.log("მილიწამი : " + x.getMilliseconds());
+
+      ///////////////////////////////////////////////////////////////////////
+
+      var months = [
+        "იანვარი",
+        "თებერვალი",
+        "მარტი",
+        "აპრილი",
+        "მაისი",
+        "ივნისი",
+        "ივლისი",
+        "აგვისტო",
+        "სექტემბერი",
+        "ოქტომბერი",
+        "ნოემბერი",
+        "დეკემბერი",
+      ];
+
+      var weekdays = [
+        "კვირა",
+        "ორშაბათი",
+        "სამშაბათი",
+        "ოთხშაბათი",
+        "ხუთშაბათი",
+        "პარასკევი",
+        "შაბათი",
+      ];
+
+      console.log("თვე : " + months[x.getMonth()]);
+      console.log("კვირის დღე : " + weekdays[x.getDay()]);
+    </script>
+  </head>
+  <body></body>
+</html>
