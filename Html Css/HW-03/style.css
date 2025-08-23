@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  display: flex;
+}
+.left {
+  background-color: gray;
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.logoparent {
+  background-color: lime;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  background-color: yellow;
+  width: 50%;
+}
+
+body {
+  background-image: url(./winston-chen-7kxBjm23-gE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.cont {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box1 {
+  width: 250px;
+  height: 46vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.button {
+  size: 20px;
+  padding-top: 17%;
+}
+
+p {
+  padding-top: 15px;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+}
+.buttonOdd {
+  padding-top: 12px;
+}
